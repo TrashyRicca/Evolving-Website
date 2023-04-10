@@ -10,7 +10,7 @@ $(window).on("load", function() {
             mm = String(today.getMonth() + 1).padStart(2, "0"),
             yyyy = today.getFullYear(),
             nextYear = yyyy + 1,
-            dayMonth = "04/14/21:00",
+            dayMonth = "04/15",
             birthday = dayMonth + yyyy;
         
         today = mm + "/" + dd + "/" + yyyy;
@@ -23,7 +23,7 @@ $(window).on("load", function() {
       
               const now = new Date().getTime(),
                     distance = countDown - now;
-      
+              
               document.getElementById("days").innerText = Math.floor(distance / (day)),
                 document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
                 document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
