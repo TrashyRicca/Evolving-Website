@@ -15,7 +15,7 @@ $(window).on("load", function() {
         
         today = mm + "/" + dd + "/" + yyyy;
         if (today > birthday) {
-          birthday = dayMonth + nextYear + "08:00";
+          birthday = dayMonth + nextYear;
         }
         
         const countDown = new Date(birthday).getTime(),
