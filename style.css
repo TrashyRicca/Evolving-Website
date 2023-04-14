@@ -2,6 +2,7 @@
 	--dark: #191919;
 	--bright: #fec20c;
 	--smaller: .75;
+	--slide: -88%;
 }
 
 @font-face {
@@ -113,8 +114,8 @@ line-height: 0.85em;
 		width: 73%!important;
 	}
 
-	.infinityWrapper > p{
-		animation: marquee2 5s linear infinite;
+	:root {
+		--slide: -59%!important;
 	}
 
 	#textContainer > div{
@@ -416,16 +417,7 @@ line-height: 0.85em;
         transform: translate(0%, 0);
       }
       100% {
-        transform: translate(-88%, 0);
-      }
-}
-
-@keyframes marquee2 {
-    0% {
-        transform: translate(0%, 0);
-      }
-      100% {
-        transform: translate(-59%, 0);
+        transform: translate(var(--slide), 0);
       }
 }
 
