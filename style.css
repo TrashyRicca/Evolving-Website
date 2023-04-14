@@ -59,9 +59,13 @@ body {
 }
 
 .container {
+	height: 100vh;
 color: var(--bright);
 margin: 0 auto;
 text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 h1 {
